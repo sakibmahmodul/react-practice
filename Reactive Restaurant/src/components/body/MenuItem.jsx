@@ -9,7 +9,7 @@ const MenuItem = props => {
                 <CardBody>
                     <CardImg width="100%" alt={props.dish.name} src={props.dish.image} style={{opacity: '0.5'}} />
                     <CardImgOverlay>
-                        <CardTitle style={{textAlign: 'center'}}>{props.dish.name}</CardTitle>
+                        <CardTitle style={{textAlign: 'center', cursor: 'pointer'}} onClick={props.onDishSelect}>{props.dish.name}</CardTitle>
                     </CardImgOverlay>
                 </CardBody>
             </Card>
